@@ -1,0 +1,60 @@
+@import 'reset';
+@import 'config';
+
+body {
+    background-color: $clr-neutral-200;
+    font-family:$ff-primary;
+    font-size:$fs-500;
+    width:100vw;
+    min-height:100vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:$size-500;
+}
+
+h1 {
+    font-weight: $fw-bold;
+    font-size:$fs-700;
+}
+
+.qr_container {
+    background-color: $clr-neutral-100;
+    padding:$size-500;
+    border-radius:$fs-200;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+    width:320px;
+    height:497px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: $size-700;
+    img {
+        border-radius: $fs-200;
+        margin-bottom:$size-400;
+        object-fit: contain;
+    }
+    &__info{
+        &-heading{
+            color:$clr-primary-100;
+            text-align: center;
+            margin-bottom: $size-400;
+            
+        }
+        &-description{
+            color:$clr-neutral-200;
+            text-align: center;
+        }
+    }
+  
+}
+
+.attribution {
+    font-size: $fs-200;
+    text-align: center;
+    a {
+    color: $clr-accent-500;
+  }
+}

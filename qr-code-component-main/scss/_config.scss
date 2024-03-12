@@ -1,0 +1,43 @@
+$clr-accent-100:hsl(220, 15%, 55%);
+$clr-accent-500:hsl(228, 45%, 44%);
+
+$clr-primary-100:hsl(218, 44%, 22%);
+
+$clr-neutral-200:hsl(212, 45%, 50%);
+$clr-neutral-100: hsl(0, 0%, 100%);
+
+$ff-primary:"Outfit", sans-serif;
+
+$fw-regular:400;
+$fw-bold:700;
+
+$fs-200:0.6875rem;
+$fs-300: 0.8125rem;
+$fs-400: 0.875rem;
+$fs-500: 0.9375rem;
+$fs-600: 1rem;
+$fs-700: 1.375rem;
+$fs-800: 2.5rem;
+$fs-900: 3.5rem;
+
+$size-100: 0.25rem;
+$size-200: 0.5rem;
+$size-300: 0.75rem;
+$size-400: 1rem;
+$size-500: 1.25rem;
+$size-600: 1.5rem;
+$size-700: 2rem;
+$size-800: 2.5rem;
+$size-900: 3rem;
+
+@mixin media-desktop {
+    @media screen and (min-width: 1440px) {
+      @content;
+    }
+  }
+
+  @mixin media-mobile {
+    @media screen and (min-width: 375px) {
+      @content;
+    }
+  }
